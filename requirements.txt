@@ -4,3 +4,5 @@ flask-heroku
 flask-wtf
 email-validator
 flask-sqlalchemy
+flask-login
+flask-bcrypt
