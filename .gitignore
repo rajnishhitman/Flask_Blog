@@ -2,3 +2,4 @@ venv
 .vscode
 __pycache__
 site.db
+.idea
