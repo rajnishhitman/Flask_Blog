@@ -7,3 +7,4 @@ flask-sqlalchemy
 flask-login
 flask-bcrypt
 py3-validate-email
+Pillow
