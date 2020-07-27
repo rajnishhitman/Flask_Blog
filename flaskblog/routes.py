@@ -111,7 +111,11 @@ def account():
     if form.validate_on_submit():
         if form.picture.data:
             picture_file = save_picture(form.picture.data)
+            if current_user.image_file != 'default.jpg':
+                current_path = os.path.join(app.root_path, 'static/profile_pics', current_user.image_file)
+                os.remove(current_path)
             current_user.image_file = picture_file
+
         current_user.username = form.username.data
         current_user.email = form.email.data
         db.session.commit()
